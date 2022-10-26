@@ -1,0 +1,19 @@
+.select__option{
+  width: 200px;
+  height: 50px;
+  font-family: 'Carter One', cursive;
+  color: var(--color-black);
+  background-color: var(--color-white);
+  margin-bottom: 20px;
+  animation: slide-right 0.3s linear;
+  animation-direction: reverse;
+}
+
+#dark .select__option{
+  color: var(--color-white);
+  background-color: var(--color-black);
+}
+
+@keyframes slide-right {
+  100% {transform: translateX(200%)}  
+}

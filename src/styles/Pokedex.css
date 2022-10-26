@@ -1,0 +1,47 @@
+.card-container{
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+}
+.pokedex__header{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  align-content: center;
+  justify-content: center;
+  text-align: center;
+}
+.pokedex-header__img{
+  max-width: 250px;
+  max-height: 250px;
+  margin-top: 80px;
+  margin-bottom: 20px;
+  animation: smash 0.5s ease-in;
+  animation-direction: reverse;
+  animation: bright 1s linear infinite;
+  animation-direction: alternate;
+}
+.pokedex__instructions{
+  font-family: 'Carter One', cursive;
+  animation: slide-left 0.5s ease-in;
+  animation-direction: reverse;
+}
+.pokedex__aside{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  align-content: center;
+  justify-content: center;
+}
+
+@keyframes smash {
+  100% {transform: scale(9.5)}
+}
+@keyframes slide-left {
+  100% {transform: translateX(-100%)}
+}
+@keyframes bright {
+  100% {filter: brightness(0.1)}
+}

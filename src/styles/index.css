@@ -1,0 +1,58 @@
+/*   VARIABLES  */
+
+:root {
+  --color-violet1: #b6378b;
+  --color-violet2: #741e53;
+  --color-lightviolet1: #9886d5;
+  --color-lightviolet2: #64539b;
+  --color-white: #FFFFFF;
+  --color-black: #000000;
+}
+
+/*   RESETS   */
+
+*,::before,::after{
+  box-sizing: border-box;
+}
+
+body{
+  margin: 0;
+}
+
+h1,h2,h3,h4,ul,p {
+  margin-top:0;
+  margin-bottom:0;
+
+}
+
+select{
+  outline: none;
+  border: none;
+}
+ul {
+  padding-left: 0;
+  list-style: none;
+}
+
+img {
+  display: block;
+  width: 100%;
+}
+
+a {
+  font-family: inherit;
+  text-decoration: none;
+}
+a:visited {
+  color: black;
+}
+
+input{
+  outline: none;
+  border: none;
+}
+
+button{
+  border: none;
+  cursor: pointer;
+}

@@ -1,0 +1,52 @@
+.pokeId__container{
+  min-height: 100vh;
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 1fr 1fr;
+}
+
+.pokeId-header__container{
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 100px 1fr;
+  justify-items: center;
+  align-items: center;
+  justify-content: center;
+  align-content: center;
+  width: 70%;
+  margin: 30px auto;
+  background-color: rgba(206, 206, 206, 0.3);
+  border-radius: 40px;
+  padding: 30px;
+  backdrop-filter: blur(5px);
+}
+.pokeId-header__name{
+  color: white;
+  display: flex;
+  flex-direction: row;
+  align-content: center;
+  justify-content: center;
+  align-items: center;
+  font-family: 'Carter One', cursive;
+}
+.pokeId-header__img-default,
+.pokeId-header__img-twisted {
+  height: 100px;
+  width: 100px;
+}
+.pokeId-header__img-twisted{
+  transform: rotateY(180deg);
+}
+.pokeId-header__img{
+  height: 40vh;
+  width: 40vw;
+  filter: drop-shadow(7px 7px 5px black);
+}
+.pokeId-header__img:hover{
+  transform: scale(1.1);
+  transition: all .5s ease;
+}
+
+#dark .pokeId-header__container{
+  background-color: rgba(140, 140, 140, 0.3);
+}

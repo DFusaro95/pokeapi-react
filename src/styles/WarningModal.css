@@ -1,0 +1,99 @@
+
+.modal-box{
+  z-index: 5;
+  opacity: 1;
+  pointer-events: auto;
+  transition: all .5s ease;
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  min-height: 100vh;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  align-content: center;
+  background-color: rgba(0,0,0,0.8);
+  backdrop-filter: blur(4px);
+}
+.modal__disable {
+  opacity: 0;
+  pointer-events: none;
+  z-index: 1;
+  transition: all .5s ease;
+}
+.modal-container{
+  box-shadow: 0px 0px 20px 20px rgba(0,0,0,0.5);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  align-content: center;
+  background-color: var(--color-lightviolet2);
+  max-width: 80%;
+  margin: 0 auto;
+  font-family: 'Carter One', cursive;
+  position: relative;
+  padding: 5px;
+  max-width: 900px;
+}
+.modal-header{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-content: center;
+}
+.modal-header__title{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-content: center;
+  align-items: center;
+  font-size: 18px;
+  gap: 5px;
+  animation: wink 1s linear infinite;
+  animation-direction: alternate;
+}
+.modal-header__btn-close{
+  background-color: var(--color-lightviolet2);
+  color: var(--color-white);
+  cursor: pointer;
+  position: absolute;
+  top: 0;
+  right: 0;
+  font-size: 1.5rem;
+  transition: all .5s ease;
+}
+.modal-header__btn-close:hover,
+.modal__btn-close:hover{
+  color: rgb(197, 1, 1);
+  transform: scale
+}
+.modal-description__container{
+  font-size: 15px;
+}
+.modal-description{
+  text-align: center;
+}
+.modal-description__span{
+  animation: wink 1.3s linear infinite;
+  animation-direction: alternate;
+}
+.modal__btn-close{
+  font-family: 'Carter One', cursive;
+  cursor: pointer;
+  width: 50%;
+  background-color: rgba(0,0,0,0.5);
+  transition: all .5s ease;
+}
+.modal__btn-close:hover{
+  background-color: rgba(0,0,0,0.9);
+  transition: color .5s ease;
+}
+
+@keyframes wink {
+  100% {color: rgb(197, 1, 1);}
+}

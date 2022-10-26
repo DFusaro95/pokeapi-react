@@ -1,0 +1,340 @@
+.App {
+    position: relative;
+    min-height: 100vh;
+    height: 100%;
+    background: linear-gradient(#929292, #000000, #ff0000);
+}
+
+.app__btn-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    align-content: center;
+    margin: 0 auto;
+    font-size: 15px;
+    position: absolute;
+    max-width: 165px;
+}
+
+.app__btn-title {
+    text-shadow: -2px 0 black, 0 2px black, 2px 0 black, 0 -2px black;
+    font-family: 'Carter One', cursive;
+    color: #5d5d5d;
+}
+
+.app__ld-btn {
+    display: flex;
+    cursor: pointer;
+    width: 40px;
+    height: 40px;
+    justify-content: center;
+    align-content: center;
+    background-color: rgba(146, 146, 146, 0.387);
+    border-radius: 10px;
+    align-items: center;
+    flex-direction: column;
+    margin-left: 57px;
+}
+
+
+#dark {
+    background: linear-gradient(#555555, #000000, #a00000);
+}
+
+
+/* ------BORDER COLOR------ */
+
+.border-grass {
+    border-color: #C3DEA3;
+}
+
+.border-flying {
+    border-color: #88e3ff;
+}
+
+.border-fire {
+    border-color: #e35825de;
+}
+
+.border-water {
+    border-color: #1382918a;
+}
+
+.border-rock {
+    border-color: #7E7E7E;
+}
+
+.border-dark {
+    border-color: #5A5E5D;
+}
+
+.border-fairy {
+    border-color: #C23867;
+}
+
+.border-steel {
+    border-color: #2B319B;
+}
+
+.border-ghost {
+    border-color: #323569;
+}
+
+.border-bug {
+    border-color: #4AB648;
+}
+
+.border-ground {
+    border-color: #895C1A;
+}
+
+.border-fighting {
+    border-color: #96402A;
+}
+
+.border-ice {
+    border-color: #6FBEDF;
+}
+
+.border-dragon {
+    border-color: #478A93;
+}
+
+.border-psychic {
+    border-color: #5CD624;
+}
+
+.border-electric {
+    border-color: #F1EE3D;
+}
+
+.border-normal {
+    border-color: #ebbb37e3;
+}
+
+.border-poison {
+    border-color: #5B3184;
+}
+
+
+/* ------ BACKGROUND COLOR ------- */
+
+.bg-grass {
+    background: linear-gradient(178.92deg, #7EC6C5 0.92%, #ABDAC6 47.96%, #CAE099 99.08%);
+}
+
+.bg-flying {
+    background: linear-gradient(176.37deg, #88e3ff -32.26%, #40bee5 22.55%, #03b0e5 125.72%);
+}
+
+.bg-poison {
+    background: linear-gradient(177.03deg, #5B3184 -11.97%, #A564E3 71.28%, #CE9BFF 135.64%);
+}
+
+.bg-fire {
+    background: linear-gradient(176.37deg, #F96D6F -32.26%, #E35825 22.55%, #E8AE1B 125.72%);
+}
+
+.bg-water {
+    background: linear-gradient(179.57deg, #133258 -70.14%, #1479FB 56.16%, #82B2F1 214.85%);
+}
+
+.bg-rock {
+    background: linear-gradient(177.03deg, #7E7E7E -11.97%, #8D8D94 57.49%, #D3D3D3 135.64%);
+}
+
+.bg-dark {
+    background: linear-gradient(177.03deg, #030706 -11.97%, #0D1211 57.49%, #5A5E5D 135.64%);
+}
+
+.bg-fairy {
+    background: linear-gradient(179.75deg, #971B45 -19.96%, #C23867 43.67%, #CD7D98 138.4%);
+}
+
+.bg-steel {
+    background: linear-gradient(179.75deg, #0C1395 -19.96%, #2B319B 43.67%, #7075D9 138.4%);
+}
+
+.bg-ghost {
+    background: linear-gradient(177.03deg, #323569 -11.97%, #454AA8 57.49%, #787DDA 135.64%);
+}
+
+.bg-bug {
+    background: linear-gradient(177.56deg, #62DB60 -58.92%, #3BB039 16.57%, #AAFFA8 209.53%);
+}
+
+.bg-ground {
+    background: linear-gradient(179.75deg, #654008 -19.96%, #895C1A 43.67%, #D69638 138.4%);
+}
+
+.bg-fighting {
+    background: linear-gradient(176.83deg, #96402A -8.78%, #F1613C 169.09%, #CB735D 242.33%);
+}
+
+.bg-ice {
+    background: linear-gradient(177.03deg, #6FBEDF -11.97%, #64CBF5 47.77%, #BDEBFE 136.72%);
+}
+
+.bg-dragon {
+    background: linear-gradient(179.75deg, #478A93 -19.96%, #56A4AE 43.67%, #A2BEC1 138.4%);
+}
+
+.bg-psychic {
+    background: linear-gradient(179.75deg, #34d575eb -19.96%, #5CD624 43.67%, #C7F522 138.4%);
+}
+
+.bg-electric {
+    background: linear-gradient(179.75deg, #F5F559 -19.96%, #E1E438 43.67%, #bece2feb 138.4%);
+}
+
+.bg-normal {
+    background: linear-gradient(179.75deg, #CA970A -19.96%, #f8ec64d3 10.67%, #f8d01eeb 138.4%);
+}
+
+/* ------- LETTER COLOR ------- */
+.letter-grass {
+    color: #416460;
+}
+
+.letter-flying {
+    color: #88e3ff;
+}
+
+.letter-fire {
+    color: #E75C35;
+}
+
+.letter-water {
+    color: #1479FB;
+}
+
+.letter-rock {
+    color: #7E7E7E;
+}
+
+.letter-dark {
+    color: #030706;
+}
+
+.letter-fairy {
+    color: #971B45;
+}
+
+.letter-steel {
+    color: #0C1395;
+}
+
+.letter-ghost {
+    color: #323569;
+}
+
+.letter-bug {
+    color: #4AB648;
+}
+
+.letter-ground {
+    color: #654008;
+}
+
+.letter-fighting {
+    color: #96402A;
+}
+
+.letter-ice {
+    color: #6FBEDF;
+}
+
+.letter-dragon {
+    color: #478A93;
+}
+
+.letter-psychic {
+    color: #3CBB0A;
+}
+
+.letter-flying {
+    color: #BB100A;
+}
+
+.letter-electric {
+    color: #ECDD08;
+}
+
+.letter-normal {
+    color: #5C570C;
+}
+
+.letter-poison {
+    color: #5B3184;
+}
+
+/* ------Background-Color ------*/
+
+.background-grass {
+    background: radial-gradient(#000000 70%, #ABDAC6 , #CAE099 );
+}
+
+.bg-poison {
+    background: linear-gradient(#000000 70%, #A564E3 , #CE9BFF );
+}
+
+.background-fire {
+    background: radial-gradient(#000000 70%, #E35825 , #E8AE1B );
+}
+
+.background-water {
+    background: radial-gradient(#000000 70%, #1479FB , #82B2F1 );
+}
+
+.background-rock {
+    background: radial-gradient(#000000 70%, #8D8D94 , #D3D3D3 );
+}
+
+.background-dark {
+    background: radial-gradient(#000000 70%, #0D1211 , #5A5E5D );
+}
+
+.background-fairy {
+    background: radial-gradient(#000000 70%, #C23867 , #CD7D98 );
+}
+
+.background-steel {
+    background: radial-gradient(#000000 70%, #2B319B , #7075D9 );
+}
+
+.background-ghost {
+    background: radial-gradient(#000000 70%, #454AA8 , #787DDA );
+}
+
+.background-bug {
+    background: radial-gradient(#000000 70%, #3BB039 , #AAFFA8 );
+}
+
+.background-ground {
+    background: radial-gradient(#000000 70%, #895C1A , #D69638 );
+}
+
+.background-fighting {
+    background: radial-gradient(#000000 70%, #F1613C , #CB735D );
+}
+
+.background-ice {
+    background: radial-gradient(#000000 70%, #64CBF5 , #BDEBFE );
+}
+
+.background-dragon {
+    background: radial-gradient(#000000 70%, #56A4AE , #A2BEC1 );
+}
+
+.background-psychic {
+    background: radial-gradient(#000000 70%, #5CD624 , #C7F522 );
+}
+
+.background-electric {
+    background: radial-gradient(#000000 70%, #E1E438 , #bece2feb );
+}
+
+.background-normal {
+    background: radial-gradient(#000000 70%, #f8ec64d3 , #f8d01eeb );
+}
