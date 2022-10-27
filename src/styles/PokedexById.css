@@ -2,23 +2,22 @@
   min-height: 100vh;
   display: grid;
   grid-template-columns: 1fr;
-  grid-template-rows: 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr;
 }
 
 .pokeId-header__container{
   display: grid;
   grid-template-columns: 1fr;
-  grid-template-rows: 100px 1fr;
+  grid-template-rows: 100px 300px;
   justify-items: center;
   align-items: center;
   justify-content: center;
   align-content: center;
   width: 70%;
   margin: 30px auto;
-  background-color: rgba(206, 206, 206, 0.3);
+  background-color: rgba(206, 206, 206, 0.1);
   border-radius: 40px;
   padding: 30px;
-  backdrop-filter: blur(5px);
 }
 .pokeId-header__name{
   color: white;
@@ -38,7 +37,7 @@
   transform: rotateY(180deg);
 }
 .pokeId-header__img{
-  height: 40vh;
+  height: 50vh;
   width: 40vw;
   filter: drop-shadow(7px 7px 5px black);
 }
@@ -48,5 +47,37 @@
 }
 
 #dark .pokeId-header__container{
+  background-color: rgba(140, 140, 140, 0.1);
+}
+
+.moves__container{
+  display: flex;
+  flex-direction: column;
+  align-content: center;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+  font-family: 'Carter One', cursive;
+  background-color: rgba(206, 206, 206, 0.1);
+  margin: 0 auto;
+  width: 80vw;
+  border-radius: 20px;
+}
+.moves-title{
+  font-size: 20px;
+}
+.moves-list{
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  align-content: center;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  padding: 10px;
+}
+.pokemon__move{
   background-color: rgba(140, 140, 140, 0.3);
+  padding: 5px;
+  border-radius: 10px;
 }

@@ -23,6 +23,7 @@ const PokedexById = () => {
   if (hasError) {
     return <Pokemon404 />
   }
+  console.log(pokemon)
   
   return (
     <article className={`pokeId__container background-${pokemon?.types[0].type.name}`}>
@@ -36,8 +37,24 @@ const PokedexById = () => {
 
         <img className='pokeId-header__img' src={pokemon?.sprites.other.home.front_default} alt="POKE-IMAGE" />
       </header>
+{/*       <div className="stats__container">
+        <h2 className={`stats-title leter-${pokemon?.types[0].type.name}`}>Stats</h2>
+    
+      </div> */}
       <div className='moves__container'>
-        <h2 className="moves-title">Movements</h2>
+        <h2 className={`moves-title letter-${pokemon?.types[0].type.name}`}>Movements</h2>
+        <ul className="moves-list">
+          {
+            pokemon?.moves.map(move => (
+              <li
+              key={move.move.name}
+              className={`pokemon__move letter-${pokemon?.types[0].type.name}`}
+              >
+                {move.move.name}
+              </li>
+            ))
+          }
+        </ul>
       </div>
     </article>
   )
